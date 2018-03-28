@@ -1,0 +1,36 @@
+{
+  "name": "benben-blog",
+  "version": "1.0.0",
+  "description": "benben blog",
+  "main": "src/index.js",
+  "repository": "https://github.com/tongjch/benben-blog.git",
+  "author": "benben <jiachtong@163.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "webpack-dev-server --watch"
+  },
+  "dependencies": {
+    "flux": "^3.1.3",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2",
+    "whatwg-fetch": "^2.0.3"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "css-loader": "^0.28.11",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^1.1.11",
+    "html-webpack-plugin": "^3.1.0",
+    "style-loader": "^0.20.3",
+    "url-loader": "^1.0.1",
+    "webpack": "3.4.1",
+    "webpack-dev-server": "2.11.2"
+  }
+}
