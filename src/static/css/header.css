@@ -14,4 +14,27 @@
 .header-author{
     font-size: 22px;
     font-weight: bolder;
+    float: left;
+}
+
+.header-menu-container{
+    margin-left: 20px;
+    float: right;
+    background-color: coral;
+    height: 100%;
+    margin-right: 64px;
+}
+
+.header-menu{
+    float: right;
+    margin: 12px 0 0 20px;
+    font-size: 16px;
+    text-align: center;
+    height: 30px;
+}
+
+.header-menu-item{
+    list-style-type: none;
+    float: left;
+    margin-left: 20px;
 }
