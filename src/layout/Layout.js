@@ -1,6 +1,8 @@
 import React,{Component} from 'react';
-import Header from '../header/Header'
-require("../static/css/base.css")
+import Header from '../header/Header';
+import Home from "../home/Home";
+import { Route } from "react-router-dom";
+require("../static/css/base.css");
 
 
 class Layout extends Component {
@@ -9,6 +11,9 @@ class Layout extends Component {
         return (
             <div className="container">
                 <Header />
+                <div>
+                    <Route to="home" component={Home}></Route>
+                </div>
             </div>
         )
     }
