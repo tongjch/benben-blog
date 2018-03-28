@@ -44,6 +44,6 @@ module.exports = {
     plugins: [HtmlWebpackPluginConfig,
         new ExtractTextPlugin('dist/css/[name].css'),
         new webpack.DefinePlugin({
-            'process.env.NODE_ENV': JSON.stringify('dev')
+            'process.env.NODE_ENV': JSON.stringify('production')
         })]
 }

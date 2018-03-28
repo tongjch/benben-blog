@@ -8,7 +8,8 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "dev": "webpack-dev-server --watch"
+    "dev": "webpack-dev-server --watch",
+    "build": "webpack"
   },
   "dependencies": {
     "flux": "^3.1.3",
