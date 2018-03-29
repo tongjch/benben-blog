@@ -11,7 +11,7 @@ class Layout extends Component {
         return (
             <div className="container">
                 <Header />
-                <div>
+                <div className="content-container">
                     <Route to="home" component={Home}></Route>
                 </div>
             </div>

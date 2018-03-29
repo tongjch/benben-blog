@@ -5,7 +5,8 @@
     background-color: #f5f5f5;
 }
 .header-center-container{
-    width: 80%;
+    width: 60%;
+    min-width: 580px;
     height: 100%;
     margin: 0 auto;
 }

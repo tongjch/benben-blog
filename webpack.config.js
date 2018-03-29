@@ -9,7 +9,7 @@ const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
     filename: 'index.html',
     inject: 'body',
     hash: true,
-    title: 'benben-blog'
+    title: 'BenBen-Blog'
 })
 
 module.exports = {
