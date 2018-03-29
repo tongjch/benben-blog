@@ -1,7 +1,8 @@
 import React,{Component} from 'react';
 import Header from '../header/Header';
 import Home from "../home/Home";
-import { Route } from "react-router-dom";
+import MarkdownArticle from '../article/MarkdownArticle';
+import { Route,Redirect } from "react-router-dom";
 require("../static/css/base.css");
 
 
@@ -12,7 +13,9 @@ class Layout extends Component {
             <div className="container">
                 <Header />
                 <div className="content-container">
-                    <Route to="home" component={Home}></Route>
+                    <Route path="/home" component={Home}></Route>
+                    <Route path="/article/:id" component={MarkdownArticle}></Route>
+                    <Redirect to="/home" />
                 </div>
             </div>
         )

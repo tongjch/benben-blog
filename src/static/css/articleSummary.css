@@ -1,6 +1,6 @@
 .article-summary-container{
-    width: 80%;
-    min-width: 1024px;
+    width: 60%;
+    min-width: 580px;
     margin: 12px auto;
     min-height: 128px;
 }
