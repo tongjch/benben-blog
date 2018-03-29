@@ -7,6 +7,8 @@ class AppDispatcher extends Dispatcher {
     }
 
     dispatchAsync(promise, types, payload){
+        console.log("types", types)
+        console.log("payload", payload)
         const {request, success, failure} = types;
 
         this.dispatch({type: request, payload: Object.assign({}, payload)});
@@ -24,4 +26,4 @@ class AppDispatcher extends Dispatcher {
     }
 }
 
-export default new AppDispatcher()
+export default new AppDispatcher;
