@@ -12,7 +12,7 @@ class Header extends Component {
                     <div className="header-menu-container">
                         <ul className="header-menu">
                             <li className="header-menu-item">
-                                <Link to="/home">
+                                <Link to="/">
                                     <i className="fa fa-home fa-fw"></i>
                                     &nbsp;首页
                                 </Link>

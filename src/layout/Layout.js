@@ -13,9 +13,8 @@ class Layout extends Component {
             <div className="container">
                 <Header />
                 <div className="content-container">
-                    <Route path="/home" component={Home}></Route>
-                    <Route path="/article/:id" component={MarkdownArticle}></Route>
-                    <Redirect to="/home" />
+                    <Route exact path='/' component={Home} />
+                    <Route path="/articles/:time/:name" component={MarkdownArticle}></Route>
                 </div>
             </div>
         )

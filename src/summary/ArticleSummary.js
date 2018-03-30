@@ -28,10 +28,7 @@ class ArticleSummary extends Component {
                 </div>
                 <div className="article-summary-desc">{article.desc}</div>
                 <div className="artilet-summary-operation">
-                    <Link to={{
-                        pathname: "/article/" + id,
-                        state: articleUrl
-                    }}>阅读全文>></Link>
+                    <Link to={articleUrl}>阅读全文>></Link>
                 </div>
             </div>
         )
