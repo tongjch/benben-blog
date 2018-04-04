@@ -1,29 +1,32 @@
 import React,{Component} from 'react';
 import {Container} from 'flux/utils';
-import ArticleStore from '../stores/ArticleStore';
-import ArticleAction from '../action/ArticleAction';
-import marked from 'marked';
-require("../static/css/article.css");
+
 
 class MarkdownArticle extends Component {
 
-    componentDidMount(){
-        let url = this.props.match.url;
-        ArticleAction.fetchArticle(url)
+    constructor(props){
+        super(props)
+        this.state = {
+            height: '1000px'
+        }
+    }
+
+    handleLoad = (event) => {
+        let height = event.target.contentDocument.body.offsetHeight+"px";
+        console.log(height);
+        this.setState({height:height})
     }
 
     render(){
-        let content = this.state.article;
         let url = this.props.match.url;
+        let height = this.state.height;
+        console.log(height);
         return (
-           <iframe src={url} frameborder="0" scrolling="no" width="100%"></iframe>
+           <iframe src={url} frameborder="0" scrolling="no" width="100%" height={height} onLoad={this.handleLoad} ></iframe>
         )
     }
 }
 
-MarkdownArticle.getStores = () => [ArticleStore];
-MarkdownArticle.calculateState = (prevState) => ({
-    article: ArticleStore.getState()
-});
 
-export default Container.create(MarkdownArticle);
+
+export default MarkdownArticle;
