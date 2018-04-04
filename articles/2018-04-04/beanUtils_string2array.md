@@ -1,7 +1,3 @@
-; tags: java|beanUtils
-; name: BeanUtils自定义stringToArray转换
-; desc: 防止beanUtils将String转为String[]时对字符串进行切分
-
 ## BeanUtils自定义stringToArray转换
 
 BeanUtils工具在将String类型转为String[]，会对String字符串进行分割然后转换成数据，示例如下：
