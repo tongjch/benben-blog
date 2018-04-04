@@ -13,12 +13,10 @@ class MarkdownArticle extends Component {
     }
 
     render(){
-
-        
-        let content = marked(this.state.article);
-
+        let content = this.state.article;
+        let url = this.props.match.url;
         return (
-            <div className="article-content" dangerouslySetInnerHTML={{__html: content}}></div>
+           <iframe src={url} frameborder="0" scrolling="no" width="100%"></iframe>
         )
     }
 }

@@ -24,7 +24,7 @@ public class Demo {
 }
 ```
 
-此场景有时候并不能满足业务需求，我们需要的是将test@qq.com转换成["test@qq.com"],此时我们需要自定义一个Convert用来满足业务需求，实现如下：
+此场景有时候并不能满足业务需求，我们需要的是将**test@qq.com**转换成**["test@qq.com"]**,此时我们需要自定义一个Convert用来满足业务需求，实现如下：
 
 ```java
 public class StringArrayConverter extends ArrayConverter {
