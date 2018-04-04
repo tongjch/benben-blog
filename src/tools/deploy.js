@@ -78,6 +78,7 @@ new Promise(function(resolve,reject){
     meta.file = "/articles/"+meta.time+"/"+path.basename(lastArg);
     console.log("parse meta info succ!!",meta);
     storeLastData(meta)
+    storeAll(meta)
     moveMarkDownFile(meta);
 })
 
@@ -85,15 +86,27 @@ new Promise(function(resolve,reject){
 function storeLastData(meta){
   var content = fs.readFileSync("data/last.json","UTF-8");
   var json = JSON.parse(content);
-  json.push(meta);
-  console.log("last data:",json);
+  json.unshift(meta);
+  //最近版本最多只能存储12个
+  if(json.length > 12){
+      json.pop();
+  }
   fs.writeFileSync("data/last.json",JSON.stringify(json),"UTF-8");
 }
 
+//移动markdown文件
 function moveMarkDownFile(meta){
     var file = meta.file.substring("1");
-    fs.mkdirSync(path.extname(file))
-
+    if(!fs.existsSync(path.dirname(file))){
+        fs.mkdirSync(path.dirname(file))
+    }
     fs.writeFileSync(file,fs.readFileSync(lastArg));
     fs.unlinkSync(lastArg);
+}
+
+function storeAll(meta){
+    var content = fs.readFileSync("data/data.json","UTF-8");
+    var json = JSON.parse(content);
+    json.push(meta);
+    fs.writeFileSync("data/data.json",JSON.stringify(json),"UTF-8");
 }
