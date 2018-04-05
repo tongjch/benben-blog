@@ -1,0 +1,36 @@
+.tag-container{
+    width: 60%;
+    min-width: 580px;
+    margin: 32px auto;
+    min-height: 128px;
+    text-align: center;
+}
+.tag-title{
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 26px;
+}
+.tag-size{
+    font-size: 14px;
+    line-height: 14px;
+    margin-top: 16px;
+    margin-bottom: 32px; 
+    color: #555;
+}
+.tag-blocks{
+    width: 40%;
+    min-width: 480px;
+    margin: 0 auto;
+}
+.tag-block{
+    float: left;
+    font-size: 15px;
+    color: #adadad;
+    border-bottom: 1px solid #ccc;
+    margin: 10px;
+    padding: 10px 0;
+}
+.tag-block-focus{
+    font-size: 27px;
+    color: #303030;
+}

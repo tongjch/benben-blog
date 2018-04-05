@@ -1,1 +1,1 @@
-[{"id":1522814822848,"time":"2018-04-04","tags":["java","beanUtils"],"name":"BeanUtils自定义stringToArray转换","desc":"防止beanUtils将String转为String[]时对字符串进行切分","file":"/articles/2018-04-04/beanUtils_string2array.md"}]
+[{"id":1522814822848,"time":"2018-04-04","tags":["JAVA","beanUtils"],"name":"BeanUtils自定义stringToArray转换","desc":"防止beanUtils将String转为String[]时对字符串进行切分","file":"/articles/2018-04-04/beanUtils_string2array.md"}]
