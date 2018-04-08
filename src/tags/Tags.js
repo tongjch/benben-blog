@@ -2,6 +2,7 @@ import React,{Component} from "react";
 import TagAction from "../action/TagAction";
 import TagStore from "../stores/TagStore";
 import {Container} from 'flux/utils';
+import { Link } from "react-router-dom";
 require("../static/css/tags.css");
 
 
@@ -26,14 +27,18 @@ class Tags extends Component {
         let size = keys.length;
 
         let tags = keys.map((tag) => (
-            <div className={this.tagClass(tag)} key={"tags-"+tag}>{tag}</div>
+            <div className={this.tagClass(tag)} key={"tags-"+tag}>
+                <Link to={"/tag/"+tag}>{tag}</Link>
+            </div>
         ));
 
         return (
             <div className="tag-container">
                 <div className="tag-title">文章标签</div>
                 <div className="tag-size">目前共计&nbsp;{size}&nbsp;个标签</div>
-                <div className="tag-blocks">{tags}</div>
+                <div className="tag-blocks">
+                    {tags}
+                </div>
             </div>
         )
     }
