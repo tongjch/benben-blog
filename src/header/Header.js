@@ -24,12 +24,6 @@ class Header extends Component {
                                 </Link>
                             </li>
                             <li className="header-menu-item">
-                                <Link to="/types">
-                                    <i className="fa fa-th fa-fw"></i>
-                                    &nbsp;分类
-                                </Link>
-                            </li>
-                            <li className="header-menu-item">
                                 <Link to="/archives">
                                     <i className="fa fa-archive fa-fw"></i>
                                     &nbsp;归档
@@ -37,8 +31,8 @@ class Header extends Component {
                             </li>
                             <li className="header-menu-item">
                                 <Link to="/search">
-                                    <i className="fa fa-search fa-fw"></i>
-                                    &nbsp;搜索
+                                    <i className="fa fa-github fa-fw"></i>
+                                    &nbsp;关于
                                 </Link>
                             </li>
                         </ul>
