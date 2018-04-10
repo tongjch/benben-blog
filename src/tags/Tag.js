@@ -7,24 +7,23 @@ require("../static/css/tag.css");
 
 class Tag extends Component {
 
-    constructor(props){
-        super(props)
-        this.state = {
-            tag: ''
-        }
-    }
+
 
     componentDidMount() {
-        this.setState({tag:this.props.match.params.tag});
         TagAction.fetchTags();
     }
 
     render() {
 
-        let tag = this.state.tag;
+        let tag =this.props.match.params.tag;
         let tags = this.state.tags;
-        //let arr = tags[tag];
-        //console.log(arr);
+        let arr = tags[tag];
+        let content = [];
+        if(arr){
+            content = arr.map((article) => {
+                console.log(article);
+            })
+        }
 
         return (
             <div className="s-tag-container">
@@ -40,4 +39,4 @@ Tag.calculateState = (prevState) => ({
     tags: TagStore.getState()
 });
 
-export default Tag;
+export default Container.create(Tag);
