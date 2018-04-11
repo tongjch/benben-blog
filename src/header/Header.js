@@ -30,10 +30,10 @@ class Header extends Component {
                                 </Link>
                             </li>
                             <li className="header-menu-item">
-                                <Link to="/search">
+                                <a href="https://github.com/tongjch/tongjch.github.io">
                                     <i className="fa fa-github fa-fw"></i>
                                     &nbsp;关于
-                                </Link>
+                                </a>
                             </li>
                         </ul>
                     </div>
