@@ -2,3 +2,52 @@
     margin: 30px 0;
     display: block;
 }
+
+.artilce-line-meta{
+    position: absolute;
+    font-size: 12px;
+    left: 20px;
+    top: 16px;
+}
+
+.article-line-header{
+    position: relative;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+    transition-property: border;
+    border-bottom: 1px dashed #ccc;
+    opacity: 1; 
+    display: block; 
+    transform: translateY(0px);
+}
+
+.article-line-header::before{
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 20px;
+    width: 6px;
+    height: 6px;
+    margin-left: -4px;
+    background: #bbb;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+    transition-property: background;
+}
+
+.article-line-title{
+    font-size: 16px;
+    color: #666;
+    margin-left: 100px;
+    line-height: 48px;
+}
+.article-line-title a{
+    text-decoration: none;
+    color: #666;
+}
+
+

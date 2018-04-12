@@ -3,6 +3,7 @@ import TagAction from "../action/TagAction";
 import TagStore from "../stores/TagStore";
 import {Container} from 'flux/utils';
 import Line from "../component/Line";
+import {  Link } from "react-router-dom";
 require("../static/css/tag.css");
 
 
