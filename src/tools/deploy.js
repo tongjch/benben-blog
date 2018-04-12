@@ -42,8 +42,15 @@ fs.writeFileSync(lastFile,JSON.stringify(last),"UTF-8");
 //存储data.json数据
  let dataFile = "data/data.json";
  let all = JSON.parse(fs.readFileSync(dataFile,"UTF-8"));
+ let year = moment().format("YYYY");
+ if(!all[year]){
+    all[year] = [];
+ }
  all.push(meta);
  fs.writeFileSync(dataFile,JSON.stringify(all),"UTF-8");
+
+
+
 //存储tag.json数据
 let tagFile = "data/tags.json";
 let tagJSON = JSON.parse(fs.readFileSync(tagFile,"UTF-8"));

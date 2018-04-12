@@ -7,5 +7,8 @@ export default {
     FETCH_ARTICLE_FAIL: "fetch_article_fail",
     FETCH_TAGS: "fetch_tags",
     FETCH_TAGS_SUCC: "fetch_tags_succ",
-    FETCH_TAGS_FAIL: "fetch_tags_fail"
+    FETCH_TAGS_FAIL: "fetch_tags_fail",
+    FETCH_ARCHIVE: "fetch_archive",
+    FETCH_ARCHIVE_SUCC: "fetch_archive_succ",
+    FETCH_ARCHIVE_FAIL: "fetch_archive_fail"
 }
