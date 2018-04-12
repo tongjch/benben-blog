@@ -46,7 +46,7 @@ fs.writeFileSync(lastFile,JSON.stringify(last),"UTF-8");
  if(!all[year]){
     all[year] = [];
  }
- all.push(meta);
+ all[year].push(meta);
  fs.writeFileSync(dataFile,JSON.stringify(all),"UTF-8");
 
 
