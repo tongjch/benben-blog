@@ -1,5 +1,5 @@
 {
-    "tags":["java"],
+    "tags":["JAVA"],
     "name": "BeanUtils自定义stringToArray转换",
     "desc": "如何爬取运营商通话记录",
     "file": "OperatorCallRecords"
