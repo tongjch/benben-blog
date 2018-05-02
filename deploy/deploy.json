@@ -1,6 +1,6 @@
 {
-    "tags":["java","beanUtils"],
+    "tags":["java"],
     "name": "BeanUtils自定义stringToArray转换",
-    "desc": "防止beanUtils将String转为String[]时对字符串进行切分",
-    "file": "beanUtils_string2array"
+    "desc": "如何爬取运营商通话记录",
+    "file": "OperatorCallRecords"
 }
