@@ -14,7 +14,7 @@ class Tags extends Component {
 
     tagClass(tag) {
         var className = "tag-block"
-        if(tag == "JAVA"){
+        if(tag == "JAVA" || tag == "Spring"){
             className += " tag-block-focus"
         }
         return className;
