@@ -1,6 +1,6 @@
 {
     "tags":["JAVA","Spring","IOC"],
-    "name": "初识Spring IOC",
-    "desc": "IOC基本概念的简介以及个人理解",
-    "file": "spring-01"
+    "name": "Spring容器代码结构说明",
+    "desc": "简单介绍了Spring IOC容器的类的结构以及功能的说明",
+    "file": "spring-02"
 }
