@@ -1,6 +1,6 @@
 {
-    "tags":["JAVA","Spring","IOC"],
-    "name": "ClassPathXmlApplicationContext简介",
-    "desc": "简单介绍了ClassPathXmlApplicationContext容器启动的过程",
-    "file": "spring-03"
+    "tags":["JAVA","Spring"],
+    "name": "StandardEnvironment简介",
+    "desc": "简单介绍了StandardEnvironment的结构和作用",
+    "file": "spring-04"
 }
